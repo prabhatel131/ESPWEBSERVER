@@ -20,11 +20,11 @@ jobs:
       uses: espressif/esp-idf-ci-action@v1
       with:
         esp_idf_version: v4.4 
-
-    - name: Build Project
-      run: |
-       pwd
-        cd ESP32_webserver
+        
+        run: cd ESP32_webserver
+    -  name: Build Project
+       run: |
+    
         idf.py fullclean
         idf.py clean
         idf.py build
