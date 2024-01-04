@@ -1,0 +1,10 @@
+{
+    "hardwareType": "ESP32",
+    "parameters": "ABC",
+    "motorCapacity": 10,
+    "vfdType": "VFD123",
+    "wifiUsername": "ExternLabs",
+    "wifiPassword": "extern@12345",
+    "serverIP": "192.168.1.2",
+    "firmwareUpgradeEnable": 1
+}

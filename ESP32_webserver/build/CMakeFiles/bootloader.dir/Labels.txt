@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/externlabs/esp_build_env/ESP32_webserver/build/CMakeFiles/bootloader
+/home/externlabs/esp_build_env/ESP32_webserver/build/CMakeFiles/bootloader.rule
+/home/externlabs/esp_build_env/ESP32_webserver/build/CMakeFiles/bootloader-complete.rule
+/home/externlabs/esp_build_env/ESP32_webserver/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/externlabs/esp_build_env/ESP32_webserver/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/externlabs/esp_build_env/ESP32_webserver/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/externlabs/esp_build_env/ESP32_webserver/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/externlabs/esp_build_env/ESP32_webserver/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/externlabs/esp_build_env/ESP32_webserver/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/externlabs/esp_build_env/ESP32_webserver/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
