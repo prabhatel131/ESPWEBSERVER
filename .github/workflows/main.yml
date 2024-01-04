@@ -27,10 +27,12 @@ jobs:
         ./install.sh
         export IDF_PATH=$(pwd)
         source export.sh
+        cd ../ESP32_webserver
 
     - name: Build Project
        
       run: |
-        
-        $IDF_PATH/tools/idf.py build
+        idf.py fullclean
+        idf.py clean
+        idf.py build
 
