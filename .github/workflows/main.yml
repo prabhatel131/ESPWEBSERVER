@@ -20,7 +20,7 @@ jobs:
       uses: espressif/esp-idf-ci-action@v1
       with:
         esp_idf_version: v4.4 
-        path: /app/prabhatel131/ESPWEBSERVER/tree/main/ESP32_webserver
+        path: /tree/main/ESP32_webserver
         
    
 
