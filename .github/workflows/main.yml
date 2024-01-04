@@ -20,18 +20,26 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y git wget flex bison gperf python3 python3-pip python3-setuptools python3-serial python3-click python3-cryptography python3-future python3-pyparsing python3-pyelftools cmake ninja-build ccache libffi-dev libssl-dev dfu-util
-       
+
         git clone --recursive https://github.com/espressif/esp-idf.git
         cd esp-idf
         git checkout v4.4
         ./install.sh
         export IDF_PATH=$(pwd)
         source export.sh
-        cd ../ESP32_webserver
+        cd ..
+
+    - name: Debug ESP-IDF Setup
+      run: |
+        echo "Current directory: $(pwd)"
+        echo "Contents of ESP-IDF directory:"
+        ls -la esp-idf
+        echo "PATH environment variable:"
+        echo $PATH
 
     - name: Build Project
-       
       run: |
+        cd ESP32_webserver
         idf.py fullclean
         idf.py clean
         idf.py build
