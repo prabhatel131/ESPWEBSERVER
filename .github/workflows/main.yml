@@ -1,0 +1,30 @@
+name: Build ESP-IDF Project
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        esp-version: [v4.4]  # Adjust this based on your ESP-IDF version
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up ESP-IDF
+      uses: espressif/setup-espidf@v2
+      with:
+        esp-idf-version: ${{ matrix.esp-version }}
+
+    - name: Build Project
+      run: |
+        idf.py build
