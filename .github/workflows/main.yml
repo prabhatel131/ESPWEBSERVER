@@ -25,7 +25,7 @@ jobs:
         cd esp-idf
         git checkout v4.4
         ./install.sh
-        . ./export.sh
+        source export.sh
 
     - name: Build Project
       run: idf.py build
