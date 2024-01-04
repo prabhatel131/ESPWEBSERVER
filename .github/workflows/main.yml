@@ -31,5 +31,5 @@ jobs:
        
       run: |
         export IDF_PATH=$(pwd)/esp-idf
-        idf.py build
+        $IDF_PATH/tools/idf.py build
 
