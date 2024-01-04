@@ -23,6 +23,7 @@ jobs:
 
     - name: Build Project
       run: |
+       pwd
         cd ESP32_webserver
         idf.py fullclean
         idf.py clean
