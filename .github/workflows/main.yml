@@ -21,7 +21,7 @@ jobs:
       with:
         esp_idf_version: v4.4 
         path: /ESP32_webserver
-        target: esp32
+        target: esp32c3
         command: |
            idf.py fullclean
            idf.py clean
