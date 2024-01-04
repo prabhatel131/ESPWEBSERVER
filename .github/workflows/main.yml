@@ -23,7 +23,7 @@ jobs:
 
         git clone --recursive https://github.com/espressif/esp-idf.git
         cd esp-idf
-        git checkout 4.4
+        git checkout v4.4
         ./install.sh
         . ./export.sh
 
