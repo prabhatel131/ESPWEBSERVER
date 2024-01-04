@@ -12,19 +12,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        esp-version: [v4.4]  # Adjust this based on your ESP-IDF version
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
     - name: Set up ESP-IDF
-      uses: espressif/setup-espidf@v2
-      with:
-        esp-idf-version: ${{ matrix.esp-version }}
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y git wget flex bison gperf python3 python3-pip python3-setuptools python3-serial python3-click python3-cryptography python3-future python3-pyparsing python3-pyelftools cmake ninja-build ccache libffi-dev libssl-dev dfu-util
+
+        git clone --recursive https://github.com/espressif/esp-idf.git
+        cd esp-idf
+        git checkout 4.4
+        ./install.sh
+        . ./export.sh
 
     - name: Build Project
-      run: |
-        idf.py build
+      run: idf.py build
+
