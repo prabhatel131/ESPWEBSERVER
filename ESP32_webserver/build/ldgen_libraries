@@ -28,7 +28,7 @@
 /home/externlabs/esp_build_env/ESP32_webserver/build/esp-idf/heap/libheap.a
 /home/externlabs/esp_build_env/ESP32_webserver/build/esp-idf/soc/libsoc.a
 /home/externlabs/esp_build_env/ESP32_webserver/build/esp-idf/esp_hw_support/libesp_hw_support.a
-/home/externlabs/esp_build_env/ESP32_webserver/build/esp-idf/riscv/libriscv.a
+/home/externlabs/esp_build_env/ESP32_webserver/build/esp-idf/xtensa/libxtensa.a
 /home/externlabs/esp_build_env/ESP32_webserver/build/esp-idf/esp_common/libesp_common.a
 /home/externlabs/esp_build_env/ESP32_webserver/build/esp-idf/esp_timer/libesp_timer.a
 /home/externlabs/esp_build_env/ESP32_webserver/build/esp-idf/freertos/libfreertos.a
@@ -65,6 +65,8 @@
 /home/externlabs/esp_build_env/ESP32_webserver/build/esp-idf/libsodium/liblibsodium.a
 /home/externlabs/esp_build_env/ESP32_webserver/build/esp-idf/mqtt/libmqtt.a
 /home/externlabs/esp_build_env/ESP32_webserver/build/esp-idf/openssl/libopenssl.a
+/home/externlabs/esp_build_env/ESP32_webserver/build/esp-idf/perfmon/libperfmon.a
 /home/externlabs/esp_build_env/ESP32_webserver/build/esp-idf/spiffs/libspiffs.a
+/home/externlabs/esp_build_env/ESP32_webserver/build/esp-idf/ulp/libulp.a
 /home/externlabs/esp_build_env/ESP32_webserver/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 /home/externlabs/esp_build_env/ESP32_webserver/build/esp-idf/main/libmain.a

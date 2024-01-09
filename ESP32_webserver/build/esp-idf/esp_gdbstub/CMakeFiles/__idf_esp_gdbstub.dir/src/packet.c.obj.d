@@ -1,0 +1,26 @@
+esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/packet.c.obj: \
+ /home/externlabs/esp_build_env/esp-idf/components/esp_gdbstub/src/packet.c \
+ /home/externlabs/esp_build_env/esp-idf/components/esp_gdbstub/private_include/esp_gdbstub_common.h \
+ /home/externlabs/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.4.0/include/stdint.h \
+ /home/externlabs/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/sys-include/stdint.h \
+ /home/externlabs/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/sys-include/machine/_default_types.h \
+ /home/externlabs/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/sys-include/sys/features.h \
+ /home/externlabs/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/sys-include/_newlib_version.h \
+ /home/externlabs/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/sys-include/sys/_intsup.h \
+ /home/externlabs/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/sys-include/sys/_stdint.h \
+ /home/externlabs/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.4.0/include/stddef.h \
+ /home/externlabs/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.4.0/include/stdbool.h \
+ /home/externlabs/esp_build_env/esp-idf/components/esp_gdbstub/esp32/gdbstub_target_config.h \
+ /home/externlabs/esp_build_env/esp-idf/components/esp_gdbstub/xtensa/esp_gdbstub_arch.h \
+ /home/externlabs/esp_build_env/esp-idf/components/freertos/port/xtensa/include/freertos/xtensa_context.h \
+ /home/externlabs/esp_build_env/esp-idf/components/xtensa/include/xtensa/xtensa_context.h \
+ /home/externlabs/esp_build_env/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
+ /home/externlabs/esp_build_env/esp-idf/components/xtensa/include/xtensa/corebits.h \
+ /home/externlabs/esp_build_env/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
+ /home/externlabs/esp_build_env/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
+ /home/externlabs/esp_build_env/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
+ /home/externlabs/esp_build_env/esp-idf/components/xtensa/include/xtensa/hal.h \
+ /home/externlabs/esp_build_env/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
+ /home/externlabs/esp_build_env/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h \
+ /home/externlabs/esp_build_env/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
+ /home/externlabs/esp_build_env/ESP32_webserver/build/config/sdkconfig.h
