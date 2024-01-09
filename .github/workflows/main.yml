@@ -25,7 +25,7 @@ jobs:
            idf.py build
            
     - name: Build and show result
-      uses: batov/esp32_qemu_runner@v4.3
+      uses: batov/esp32_qemu_runner@v4.4
     - name: Publish Unit Test Results
       uses: EnricoMi/publish-unit-test-result-action@v1
       if: always()
