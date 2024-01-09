@@ -1,0 +1,29 @@
+name: Build ESP-IDF Project
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up ESP-IDF
+      uses: espressif/esp-idf-ci-action@v1
+      with:
+        esp_idf_version: v4.4 
+        path: /ESP32_webserver
+        target: esp32c3
+        command: |
+           idf.py fullclean
+           idf.py clean
+           idf.py build
+          
+   
+
+
