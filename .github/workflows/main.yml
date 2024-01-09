@@ -17,10 +17,8 @@ jobs:
            
     - name: Build and show result
       uses: batov/esp32_qemu_runner@v4.4
-      with:
-           path: /ESP32_webserver
-           target: esp32
-           command: |
+      
+             ESP32_webserver
              idf.py fullclean
              idf.py clean
              idf.py build
