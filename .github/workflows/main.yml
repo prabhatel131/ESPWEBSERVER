@@ -23,3 +23,4 @@ jobs:
          idf.py fullclean
          idf.py clean
          idf.py build
+         cd test && idf.py build
