@@ -20,10 +20,11 @@ jobs:
         target: esp32c3
         path: /Webserver_test
         command: |
-         idf.py clean
          idf.py fullclean
+         idf.py clean
          idf.py build
          cd test 
-         idf.py build
-         idf.py clean
          idf.py fullclean
+         idf.py clean
+         idf.py build
+        
