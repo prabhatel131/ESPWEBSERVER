@@ -8,7 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    strategy:
+      fail-fast: false
+      matrix:
+        espidf_target: ["esp32", "esp32c3", "esp32s2", "esp32s3"]  
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -17,7 +20,7 @@ jobs:
       uses: espressif/esp-idf-ci-action@v1
       with:
         esp_idf_version: v5.0
-        target: esp32c3
+        target: ${{ matrix.espidf_target }}
         path: /Webserver_test
         command: |
          idf.py fullclean
@@ -27,4 +30,15 @@ jobs:
          idf.py fullclean
          idf.py clean
          idf.py build
+    - name: Upload files to artifacts for run-target job
+      uses: actions/upload-artifact@v3
+      with:
+          name: test_bin_${{ matrix.espidf_target }}
+          path: |
+            test/build/bootloader/bootloader.bin
+            test/build/partition_table/partition-table.bin
+            test/build/project_test.bin
+            test/build/project_test.elf
+            test/build/flasher_args.json
+          if-no-files-found: error
         
