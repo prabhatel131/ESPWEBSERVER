@@ -16,9 +16,9 @@ jobs:
     - name: esp-idf build
       uses: espressif/esp-idf-ci-action@v1
       with:
-        esp_idf_version: v4.4
-        target: esp32 
-        path: /ESP32_webserver
+        esp_idf_version: v5.0
+        target: esp32c3
+        path: /Webserver_test
         command: |
          idf.py fullclean
          idf.py clean
