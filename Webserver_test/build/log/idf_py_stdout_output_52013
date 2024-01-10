@@ -1,0 +1,69 @@
+[1/5] cd /home/externlabs/esp_build_env/Webserver_test/build/esp-idf/esptool_py && /home/externlabs/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/externlabs/esp_build_env/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/externlabs/esp_build_env/Webserver_test/build/partition_table/partition-table.bin /home/externlabs/esp_build_env/Webserver_test/build/Webserver_test.bin
+Webserver_test.bin binary size 0xd6d80 bytes. Smallest app partition is 0x300000 bytes. 0x229280 bytes (72%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/externlabs/esp_build_env/Webserver_test/build/bootloader/esp-idf/esptool_py && /home/externlabs/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/externlabs/esp_build_env/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/externlabs/esp_build_env/Webserver_test/build/bootloader/bootloader.bin
+Bootloader binary size 0x4f10 bytes. 0x30f0 bytes (38%) free.
+[2/3] cd /home/externlabs/esp_build_env/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/externlabs/esp_build_env/esp-idf -D "SERIAL_TOOL=/home/externlabs/.espressif/python_env/idf5.0_py3.10_env/bin/python;;/home/externlabs/esp_build_env/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/externlabs/esp_build_env/Webserver_test/build -P /home/externlabs/esp_build_env/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32c3 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x0 bootloader/bootloader.bin 0x10000 Webserver_test.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-C3 (QFN32) (revision v0.3)
+Features: WiFi, BLE, Embedded Flash 4MB (XMC)
+Crystal is 40MHz
+MAC: 10:91:a8:3a:23:5c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00004fff...
+Flash will be erased from 0x00010000 to 0x000e6fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20240 bytes to 12425...
+Writing at 0x00000000... (100 %)
+Wrote 20240 bytes (12425 compressed) at 0x00000000 in 0.7 seconds (effective 216.9 kbit/s)...
+Hash of data verified.
+Compressed 880000 bytes to 514041...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001b610... (6 %)
+Writing at 0x00024ce5... (9 %)
+Writing at 0x0002996e... (12 %)
+Writing at 0x00032065... (15 %)
+Writing at 0x00039590... (18 %)
+Writing at 0x000403b4... (21 %)
+Writing at 0x00047536... (25 %)
+Writing at 0x0004d858... (28 %)
+Writing at 0x00054fe3... (31 %)
+Writing at 0x0005beaa... (34 %)
+Writing at 0x00062b0f... (37 %)
+Writing at 0x00069154... (40 %)
+Writing at 0x0006f1bb... (43 %)
+Writing at 0x00074f42... (46 %)
+Writing at 0x0007b02c... (50 %)
+Writing at 0x000815a3... (53 %)
+Writing at 0x00087955... (56 %)
+Writing at 0x0008d9f6... (59 %)
+Writing at 0x00094314... (62 %)
+Writing at 0x0009b1eb... (65 %)
+Writing at 0x000a22a7... (68 %)
+Writing at 0x000a9417... (71 %)
+Writing at 0x000af875... (75 %)
+Writing at 0x000b5a04... (78 %)
+Writing at 0x000bce14... (81 %)
+Writing at 0x000c3cc5... (84 %)
+Writing at 0x000c9d64... (87 %)
+Writing at 0x000cfb5d... (90 %)
+Writing at 0x000d797a... (93 %)
+Writing at 0x000de6bd... (96 %)
+Writing at 0x000e44fc... (100 %)
+Wrote 880000 bytes (514041 compressed) at 0x00010000 in 15.1 seconds (effective 466.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 121...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (121 compressed) at 0x00008000 in 0.1 seconds (effective 340.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

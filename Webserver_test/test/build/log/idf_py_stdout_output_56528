@@ -1,0 +1,62 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x16b0
+load:0x403cc710,len:0x95c
+load:0x403ce710,len:0x2eac
+entry 0x403cc710
+[0;32mI (30) boot: ESP-IDF v5.0.5-166-g209a0361c0 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time 18:06:58[0m
+[0;32mI (30) boot: chip revision: v0.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=08450h ( 33872) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=00018478 vaddr=3fc8ac00 size=00da8h (  3496) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00019228 vaddr=40380000 size=06df0h ( 28144) load[0m
+[0;32mI (121) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1cde8h (118248) map[0m
+[0;32mI (143) esp_image: segment 4: paddr=0003ce10 vaddr=40386df0 size=03c58h ( 15448) load[0m
+[0;32mI (149) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (149) boot: Disabling RNG early entropy source...[0m
+[0;32mI (163) cpu_start: Unicore app[0m
+[0;32mI (163) cpu_start: Pro cpu up.[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) cpu_start: Application information:[0m
+[0;32mI (175) cpu_start: Project name:     project_test[0m
+[0;32mI (180) cpu_start: App version:      1[0m
+[0;32mI (185) cpu_start: Compile time:     Jan 10 2024 18:06:51[0m
+[0;32mI (191) cpu_start: ELF file SHA256:  6648224861b1a94a...[0m
+[0;32mI (197) cpu_start: ESP-IDF:          v5.0.5-166-g209a0361c0[0m
+[0;32mI (203) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (208) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (212) cpu_start: Chip rev:         v0.3[0m
+[0;32mI (217) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC8C9F0 len 0004FD20 (319 KiB): DRAM[0m
+[0;32mI (231) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (237) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (244) spi_flash: detected chip: generic[0m
+[0;32mI (248) spi_flash: flash io: dio[0m
+[0;33mW (252) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (266) app_start: Starting scheduler on CPU0[0m
+[0;32mI (270) main_task: Started on CPU0[0m
+[0;32mI (270) main_task: Calling app_main()[0m
+
+#### Running all the registered tests #####
+
+Running url_decoding_module check...
+/home/externlabs/esp_build_env/Webserver_test/main/module_in_main/test/test_url_decoding_module.c:6:url_decoding_module check:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+[0;32mI (310) main_task: Returned from app_main()[0m
