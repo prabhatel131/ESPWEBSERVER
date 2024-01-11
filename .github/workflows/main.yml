@@ -31,10 +31,10 @@ jobs:
       with:
           name: test_bin_esp32c3
           path: |
-            test/build/bootloader/bootloader.bin
-            test/build/partition_table/partition-table.bin
-            test/build/project_test.bin
-            test/build/project_test.elf
-            test/build/flasher_args.json
+            build/bootloader/bootloader.bin
+            build/partition_table/partition-table.bin
+            build/project_test.bin
+            build/project_test.elf
+            build/flasher_args.json
           if-no-files-found: error
         
