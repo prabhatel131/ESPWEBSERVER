@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -16,10 +15,26 @@ jobs:
     - name: esp-idf build
       uses: espressif/esp-idf-ci-action@v1
       with:
-        esp_idf_version: v4.4
-        target: esp32 
-        path: /ESP32_webserver
+        esp_idf_version: v5.0
+        target: esp32c3
+        path: /Webserver_test
         command: |
          idf.py fullclean
          idf.py clean
          idf.py build
+         cd test 
+         idf.py fullclean
+         idf.py clean
+         idf.py build
+    - name: Upload files to artifacts for run-target job
+      uses: actions/upload-artifact@v3
+      with:
+          name: test_bin_esp32c3
+          path: |
+            /Webserver_test/test/build/bootloader/bootloader.bin
+            build/partition_table/partition-table.bin
+            build/project_test.bin
+            build/project_test.elf
+            build/flasher_args.json
+          if-no-files-found: error
+        
