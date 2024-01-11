@@ -31,7 +31,7 @@ jobs:
       with:
           name: test_bin_esp32c3
           path: |
-            build/bootloader/bootloader.bin
+            /Webserver_test/test/build/bootloader/bootloader.bin
             build/partition_table/partition-table.bin
             build/project_test.bin
             build/project_test.elf
