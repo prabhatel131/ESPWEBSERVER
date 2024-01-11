@@ -20,7 +20,7 @@ jobs:
       uses: espressif/esp-idf-ci-action@v1
       with:
         esp_idf_version: v5.0
-        target: ${{ matrix.espidf_target }}
+        target: esp32c3
         path: /Webserver_test
         command: |
          idf.py fullclean
