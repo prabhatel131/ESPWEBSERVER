@@ -26,15 +26,5 @@ jobs:
          idf.py fullclean
          idf.py clean
          idf.py build
-    - name: Upload files to artifacts for run-target job
-      uses: actions/upload-artifact@v3
-      with:
-          name: test_bin_esp32c3
-          path: |
-            /Webserver_test/test/build/bootloader/bootloader.bin
-            build/partition_table/partition-table.bin
-            build/project_test.bin
-            build/project_test.elf
-            build/flasher_args.json
-          if-no-files-found: error
+    
         
